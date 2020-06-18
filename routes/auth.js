@@ -3,15 +3,25 @@ const router = express.Router();
 const bcrypt = require('bcryptjs');
 const jwt = require('jsonwebtoken');
 const config = require('config');
+const auth = require('../middleware/auth');
 const { check, validationResult } = require('express-validator');
 
 const User = require('../models/User');
 
 // @route   GET api/auth
 // @desc    Get logged in user
-// @access  Private (getting a user that is logged in)
-router.get('/', (req, res) => {
-  res.send('Get logged in user');
+// @access  Private (getting a user that is logged in. it has the user)
+// (auth is a second parameter for the protected route)
+router.get('/', auth, async (req, res) => {
+  try {
+    // get user from the db using the user id embedded in the token
+    // does not include the password
+    const user = await User.findById(req.user.id).select('-password');
+    res.json(user);
+  } catch (error) {
+    console.error(err.message);
+    res.status(500).send('Server Error');
+  }
 });
 
 // @route   POST api/auth
