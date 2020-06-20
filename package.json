@@ -8,19 +8,18 @@
     "server": "nodemon server.js",
     "client": "npm start --prefix client",
     "clientinstall": "npm install --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AlanLeverenz/My-Contacts.git"
+    "url": "git+https://github.com/AlanLeverenz/MY-CONTACTS.git"
   },
   "author": "Alan Leverenz",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AlanLeverenz/My-Contacts/issues"
+    "url": "https://github.com/AlanLeverenz/MY-CONTACTS/issues"
   },
-  "homepage": "https://github.com/AlanLeverenz/My-Contacts#readme",
+  "homepage": "https://github.com/AlanLeverenz/MY-CONTACTS#readme",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "config": "^3.3.1",
