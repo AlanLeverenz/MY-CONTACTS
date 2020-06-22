@@ -22,13 +22,13 @@ const ContactItem = ({ contact }) => {
       <ul className='list'>
         {email && (
           <li>
-            <i className='fas fa-envelope-open' style={{ color: 'green' }} />{' '}
+            <i className='fas fa-envelope-open' style={{ color: 'teal' }} />{' '}
             {email}
           </li>
         )}
         {phone && (
           <li>
-            <i className='fas fa-phone' style={{ color: 'teal' }} /> {phone}
+            <i className='fas fa-phone' style={{ color: 'green' }} /> {phone}
           </li>
         )}
         {company && (
