@@ -1,7 +1,7 @@
 {
   "name": "my-contacts",
   "version": "1.0.0",
-  "description": "app to store contacts",
+  "description": "App for storing contacts. Many thanks to Brad Traversy.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
