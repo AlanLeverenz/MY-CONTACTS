@@ -32,24 +32,28 @@ const ContactItem = ({ contact }) => {
       <ul className='list'>
         {email && (
           <li>
-            <i className='fas fa-envelope-open' style={{ color: 'teal' }} />{' '}
+            <i
+              className='fas fa-envelope-open'
+              style={{ color: 'dodgerblue' }}
+            />{' '}
             {email}
           </li>
         )}
         {phone && (
           <li>
-            <i className='fas fa-phone' style={{ color: 'green' }} /> {phone}
+            <i className='fas fa-phone' style={{ color: 'limegreen' }} />{' '}
+            {phone}
           </li>
         )}
         {company && (
           <li>
-            <i className='fas fa-building' style={{ color: 'brown' }} />{' '}
+            <i className='fas fa-building' style={{ color: 'indianred' }} />{' '}
             {company}
           </li>
         )}
         {note && (
           <li>
-            <i className='fas fa-comment-alt' style={{ color: 'orange' }} />{' '}
+            <i className='fas fa-comment-alt' style={{ color: 'darkorange' }} />{' '}
             {note}
           </li>
         )}
