@@ -6,7 +6,7 @@ The full stack framework consists of MongoDB Atlas, Express server, React (using
 
 ## Models
 
-The MongoDB has two collections: User and Contact with a basic set of fields. Mongoose is used as an Object Data Modeling library for MongoDB and NodeJS, providing the schema validation and managing the relationships between data.
+The MongoDB has two collections: User and Contact with a basic set of fields. Mongoose is used as an Object Data Modeling library for MongoDB and NodeJS, providing schema validation and managing the relationships between data.
 
 ### User
 
